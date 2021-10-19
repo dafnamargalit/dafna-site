@@ -1,0 +1,11 @@
+
+.letters {
+    z-index: 1000;
+    width: 17vh;
+    padding: 0.5em;
+    transition: transform .2s;
+}
+
+.letters:hover{
+    transform: scale(1.2);
+}

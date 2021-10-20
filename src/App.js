@@ -4,6 +4,7 @@ import Loader from 'react-loader-spinner';
 
 import './App.css';
 import StarrySky from './starrySky/StarrySky';
+import Navbar from './navbar/Navbar';
 
 // const Landing = React.lazy(() => import("../Landing"));
 // const NotFound = React.lazy(() => import("../NotFound"));
@@ -31,8 +32,11 @@ export default class App extends Component {
  <Router>
       <div className='App'>
       <StarrySky />
+      <div className='navbar-header'>
+        <Navbar/>
+      </div>
       <div className='content'>
-      <Route exact path='/' className='letters' component={Home}/>
+      <Route exact path='/' component={Home}/>
       <Route exact path='/dates' component={Dates}/>
       <Route exact path='/about' component={About}/>
       <Route exact path='/footage' component={Footage}/>

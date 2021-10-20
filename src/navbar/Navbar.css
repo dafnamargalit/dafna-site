@@ -1,0 +1,10 @@
+.navLetters {
+    z-index: 1000;
+    width: 5vh;
+    padding: 0.2em;
+    transition: transform .2s;
+}
+
+.navLetters:hover{
+    transform: scale(1.2);
+}

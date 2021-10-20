@@ -27,7 +27,7 @@ export default class Home extends Component{
 
 	render(){
 		return(
-			<div className='Home'>
+			<div>
 				<Link to="/dates" style={{textDecoration:'none'}}>
                 <img className="letters" id="D" src={D} alt="D"></img>
 				</Link>

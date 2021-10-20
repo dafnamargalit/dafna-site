@@ -32,3 +32,10 @@ https://mkrtchyan.ga
 .background {
   z-index: 0;
 }
+
+.App-Loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

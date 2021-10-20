@@ -28,11 +28,21 @@ export default class Home extends Component{
 	render(){
 		return(
 			<div className='Home'>
+				<Link to="/dates" style={{textDecoration:'none'}}>
                 <img className="letters" id="D" src={D} alt="D"></img>
+				</Link>
+				<Link to="/about" style={{textDecoration:'none'}}>
                 <img className="letters" id="AY" src={AY} alt="A"></img>
+				</Link>
+				<Link to="/footage" style={{textDecoration:'none'}}>
                 <img className="letters" id="F" src={F} alt="F"></img>
+				</Link>
+				<Link to="/news" style={{textDecoration:'none'}}>
                 <img className="letters" id="N" src={N} alt="N"></img>
+				</Link>
+				<Link to="/ask" style={{textDecoration:'none'}}>
                 <img className="letters" id="AP" src={AP} alt="A"></img>
+				</Link>
 			</div>	
 		);
 	}

@@ -51,7 +51,7 @@ export default class StarrySky extends Component {
       });
     };
     randomRadius = () => {
-      return Math.random() * 0.7 + 0.6;
+      return Math.random() * 0.7 + 1.3;
     };
     getRandomX = () => {
       return Math.floor(Math.random() * Math.floor(this.state.vw)).toString();
@@ -75,7 +75,7 @@ export default class StarrySky extends Component {
                 r={this.randomRadius()}
                 stroke="none"
                 strokeWidth="0"
-                fill="white"
+                fill="#ffdd00"
                 key={y}
                 className="star"
               />

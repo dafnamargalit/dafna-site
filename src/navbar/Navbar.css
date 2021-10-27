@@ -1,3 +1,11 @@
+.Navbar {
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
 .navLetters {
     z-index: 1000;
     width: 5vh;
@@ -7,4 +15,24 @@
 
 .navLetters:hover{
     transform: scale(1.2);
+}
+
+.navWrap{
+    position: absolute;
+}
+.homeIcon {
+    width: 3vw;
+    padding: 0.2em;
+    transition: transform .2s;
+    left: 0vh;
+    margin-left: 1vw;
+    margin-right: 38vw;
+}
+
+.homeWrap {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: left;
+    justify-content: left;
 }

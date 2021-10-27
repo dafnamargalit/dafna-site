@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Loader from 'react-loader-spinner';
-
 import './App.css';
 import StarrySky from './starrySky/StarrySky';
-import Navbar from './navbar/Navbar';
 
 // const Landing = React.lazy(() => import("../Landing"));
 // const NotFound = React.lazy(() => import("../NotFound"));
@@ -16,6 +14,10 @@ const News = React.lazy(() => import("./news/News"));
 const Ask = React.lazy(() => import("./ask/Ask"));
 
 export default class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {navbar: true}
+  }
 
   render(){
   return (
@@ -23,30 +25,30 @@ export default class App extends Component {
     <div className="App-Loader" id="App-Loader">
     <Loader 
     type="Audio"
-    color="#f7d5e8"
+    color="#ff73e3"
     height="100"	
     width="100"
- />   
-</div>
-}>
+    />   
+    </div>
+  }>
+  <div className='App'>
+  <StarrySky />
  <Router>
-      <div className='App'>
-      <StarrySky />
-      <div className='navbar-header'>
-        <Navbar/>
-      </div>
+      <Switch>
+      <div>
       <div className='content'>
-      <Route exact path='/' component={Home}/>
-      <Route exact path='/dates' component={Dates}/>
-      <Route exact path='/about' component={About}/>
-      <Route exact path='/footage' component={Footage}/>
-      <Route exact path='/news' component={News}/>
-      <Route exact path='/ask' component={Ask}/>
+        <Route exact path='/'component={Home}/>
+        <Route exact path='/dates' component={Dates}/>
+        <Route exact path='/about' component={About}/>
+        <Route exact path='/footage' component={Footage}/>
+        <Route exact path='/news' component={News}/>
+        <Route exact path='/ask' component={Ask}/>
       </div>
-      {/* <Route path='/home' component={Home}/> */}
+      </div>
+      </Switch>
       {/* <Route path='*' component={NotFound} /> */}
-      </div>
     </Router>
+    </div>
 </React.Suspense>
   );
   }

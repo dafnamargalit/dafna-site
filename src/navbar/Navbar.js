@@ -5,11 +5,19 @@ import AP from '../assets/letters/A-P.svg';
 import F from '../assets/letters/F.svg';
 import N from '../assets/letters/N.svg';
 import AY from '../assets/letters/A-Y.svg';
+import homeIcon from '../assets/home.svg';
 import './Navbar.css';
 
 const Navbar = () => {
+
     return(
     <div className='Navbar'>
+        <div className='homeWrap'>
+        <Link to="/" style={{textDecoration:'none'}}>
+        <img className="homeIcon" id="Home" src={homeIcon} alt="Home"></img>
+        </Link>
+        </div>
+        <div className='navWrap'>
         <Link to="/dates" style={{textDecoration:'none'}}>
         <img className="navLetters" id="D" src={D} alt="D"></img>
         </Link>
@@ -25,6 +33,7 @@ const Navbar = () => {
         <Link to="/ask" style={{textDecoration:'none'}}>
         <img className="navLetters" id="AP" src={AP} alt="A"></img>
         </Link>
+        </div>
     </div>	
     )
 }

@@ -1,3 +1,16 @@
 .Dates{
+    height: 100vh;
+}
+
+.dates-content{
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.navbar-header{
+    margin-top: 7vh;
+    height: 8vh;
 }

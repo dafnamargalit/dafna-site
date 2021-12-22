@@ -5,7 +5,7 @@ import AP from '../assets/letters/A-P.svg';
 import F from '../assets/letters/F.svg';
 import N from '../assets/letters/N.svg';
 import AY from '../assets/letters/A-Y.svg';
-import homeIcon from '../assets/home.svg';
+import homeIcon from '../assets/icons/left-arrow.svg';
 import './Navbar.css';
 
 const Navbar = () => {

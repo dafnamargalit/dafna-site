@@ -1,12 +1,9 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import styled from 'styled-components';
-import slide1 from '../assets/images/SLIDE-1.png';
-import slide2 from '../assets/images/SLIDE-2.png';
-import LeftArrow from '../assets/icons/left-merch-Arrow.svg';
-import RightArrow from '../assets/icons/Right-Arrow.svg';
+import merch from '../assets/images/merch.png';
 
-const NewsWrap = styled.div`
+const ApparelWrap = styled.div`
     height: 100vh;
     width: 100vw;
 `
@@ -41,13 +38,13 @@ const Title = styled.div`
 
 const Body = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
 
 `
 const ImageWrap = styled.div`
-    width: 60vw;
+    width: 50vh;
 `
 
 const TextLink = styled.div`
@@ -59,32 +56,27 @@ const TextLink = styled.div`
     }
 `
 
-const ArrowWrap = styled.div`
-    // padding-left: 2em;
-`
-
-const News = () => {
+const Apparel = () => {
     return(
-        <NewsWrap>
+        <ApparelWrap>
         <NavbarHeader>
             <Navbar/>
         </NavbarHeader>
         <Header>
-            <Title> News </Title>
+            <Title> Apparel </Title>
         </Header>
         <Body>
-
-            <img width="5%" style={{padding: "2em"}} src={LeftArrow} alt=""></img>
             <ImageWrap>
-            <a href="https://shop.dafna.rocks">
-           <img width="100%" src={slide1} alt=""></img>
-           </a>
+           <img width="100%" src={merch} alt=""></img>
            </ImageWrap>
-           <img width="5%" style={{padding: "2em"}} src={RightArrow} alt=""></img>
-
+           <a href="https://shop.dafna.rocks">
+           <TextLink>
+                VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+            </TextLink>
+            </a>
         </Body>
-        </NewsWrap>
+        </ApparelWrap>
     )
 }
 
-export default News;
+export default Apparel;

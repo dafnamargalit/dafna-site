@@ -12,6 +12,8 @@ https://mkrtchyan.ga
   align-items: center;
   justify-content: center; */
   height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 
 

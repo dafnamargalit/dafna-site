@@ -8,7 +8,7 @@ import StarrySky from './starrySky/StarrySky';
 // const NotFound = React.lazy(() => import("../NotFound"));
 const Home = React.lazy(() => import("./home/Home"));
 const Dates = React.lazy(() => import("./dates/Dates"));
-const About = React.lazy(() => import("./about/About"));
+const Apparel = React.lazy(() => import("./apparel/Apparel"));
 const Footage = React.lazy(() => import("./footage/Footage"));
 const News = React.lazy(() => import("./news/News"));
 const Ask = React.lazy(() => import("./ask/Ask"));
@@ -39,7 +39,7 @@ export default class App extends Component {
       <div className='content'>
         <Route exact path='/'component={Home}/>
         <Route exact path='/dates' component={Dates}/>
-        <Route exact path='/about' component={About}/>
+        <Route exact path='/apparel' component={Apparel}/>
         <Route exact path='/footage' component={Footage}/>
         <Route exact path='/news' component={News}/>
         <Route exact path='/ask' component={Ask}/>

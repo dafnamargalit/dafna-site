@@ -10,13 +10,32 @@
     transform: scale(1.2);
 }
 
-.Home-Middle{
-    height: 100vh;
+.MailingList{
+    color:#ffdd00;
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    font-weight: 800;
+}
+.MailingList:hover{
+    transform: scale(1.1);
+}
+.Home{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
-
+.Home-Middle{
+    height: 60vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+.Home-Top{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 @media only screen and (max-width: 1024px) { 
 .letters{
     width: 6vh;

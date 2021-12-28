@@ -1,0 +1,84 @@
+.Mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color: rgba(46, 46, 46, 0.301);
+}
+
+.Mail-Modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4f7ff;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 1em;
+    padding: 5vh 3vh;
+}
+.Mailchimp-Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 6vh;
+}
+.mail-letters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+.text{
+    font-size: large;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 50vh;
+}
+.close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+input{
+    margin: 1em;
+    border: none;
+    border-radius: .25em;
+    padding: .25em .5em;
+    font-size: large;
+}
+button{
+    background-color: rgb(255, 217, 235);
+    padding: 1em 2em;
+    border-radius: .5em;
+    border: none;
+    margin: 1em;
+    font-size: large;
+}
+
+button:hover{
+    background-color:  rgb(253, 229, 240);
+}
+
+@media only screen and (max-width: 600px) { 
+    .Mail-Modal{
+        width: 75%;
+        height: 45%;
+    }
+
+    .logo{
+        width: 4vh;
+    }
+
+}

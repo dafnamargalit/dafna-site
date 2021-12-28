@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/dates" style={{textDecoration:'none'}}>
         <img className="navLetters" id="D" src={D} alt="D"></img>
         </Link>
-        <Link to="/about" style={{textDecoration:'none'}}>
+        <Link to="/apparel" style={{textDecoration:'none'}}>
         <img className="navLetters" id="AY" src={AY} alt="A"></img>
         </Link>
         <Link to="/footage" style={{textDecoration:'none'}}>

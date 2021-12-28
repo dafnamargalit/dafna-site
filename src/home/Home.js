@@ -6,8 +6,10 @@ import F from '../assets/letters/F.svg';
 import N from '../assets/letters/N.svg';
 import AY from '../assets/letters/A-Y.svg';
 import './Home.css';
-
+import Mail from '../mail/Mail';
+import styled from 'styled-components';
 // import MailchimpSubscribe from "react-mailchimp-subscribe";
+
 
 export default class Home extends Component{
 	constructor(){
@@ -27,11 +29,16 @@ export default class Home extends Component{
 
 	render(){
 		return(
+			<div className="Home">
+			<div className="Home-Top">
+			<p className="MailingList" onClick={this.openModal}>JOIN MY MAILING LIST</p>
+			</div>
 			<div className="Home-Middle">
+				<Mail className="modal" onClose={this.openModal} show={this.state.modal}></Mail>
 				<Link to="/dates" style={{textDecoration:'none'}}>
                 <img className="letters" id="D" src={D} alt="D"></img>
 				</Link>
-				<Link to="/about" style={{textDecoration:'none'}}>
+				<Link to="/apparel" style={{textDecoration:'none'}}>
                 <img className="letters" id="AY" src={AY} alt="A"></img>
 				</Link>
 				<Link to="/footage" style={{textDecoration:'none'}}>
@@ -44,6 +51,7 @@ export default class Home extends Component{
                 <img className="letters" id="AP" src={AP} alt="A"></img>
 				</Link>
 			</div>	
+			</div>
 		);
 	}
 }

@@ -30,6 +30,9 @@ const Header = styled.div`
     margin-bottom: 5vh;
     transition: all 0.5s ease 0s;
     user-select: none;
+    @media (max-width: 800px){
+        height: 5vh;
+    }
 `
 const Title = styled.div`
     display: flex;
@@ -53,13 +56,12 @@ const Body = styled.div`
     justify-content:center;
     @media (max-width: 400px){
         width: 100vw;
-        overflow: scroll;
     }
 `
 
 const End = styled.div`
     display: none;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         display: flex;
         align-items: center;
         justify-content: center;
@@ -77,7 +79,7 @@ const ImageWrap = styled.div`
         width: 80vw;
     }
     @media (max-width: 400px){
-        width: 100vw;
+        width: 90vw;
     }
 `
 

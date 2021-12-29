@@ -41,7 +41,7 @@ const Header = styled.div`
 
 const Body = styled.div`
     overflow: scroll;
-    height: 63vh;
+    height: 50vh;
 `
 const Title = styled.div`
     display: flex;
@@ -118,7 +118,7 @@ const ListItem = styled.div`
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
-    @media (max-width: 600px){
+    @media (max-width: 800px){
     display: flex;
     grid-gap: 0;
     flex-direction: column;
@@ -127,7 +127,7 @@ const ListItem = styled.div`
 `
 
 const Section = styled.div`
-    @media (max-width: 600px){
+    @media (max-width: 800px){
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -149,7 +149,7 @@ const Nothing = styled.div`
 
 const End = styled.div`
     display: none;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         display: flex;
         align-items: center;
         justify-content: center;

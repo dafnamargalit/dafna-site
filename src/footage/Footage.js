@@ -26,11 +26,11 @@ const Header = styled.div`
 
 const End = styled.div`
     display: none;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 30vh;
+        height: 10vh;
     }
 `
 const Title = styled.div`

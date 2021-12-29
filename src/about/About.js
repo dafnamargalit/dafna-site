@@ -42,11 +42,11 @@ const Description = styled.div`
 
 const End = styled.div`
     display: none;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40vh;
+        height: 20vh;
         width: 100vw;
     }
 `

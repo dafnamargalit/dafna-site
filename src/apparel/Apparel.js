@@ -62,7 +62,7 @@ const Body = styled.div`
 const ImageWrap = styled.div`
     width: 50vh;
     @media (max-width: 800px){
-        width: 40vh;
+        width: 35vh;
     }
 `
 
@@ -82,7 +82,7 @@ const End = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 20vh;
+        height: 15vh;
         width: 100vw;
     }
 `

@@ -80,9 +80,10 @@ const VideoWrap = styled.div`
     }
 `;
 
-const TextLink = styled.div`
+const TextLink = styled.a`
     color:#ffdd00;
     font-weight: 800;
+    text-decoration: none;
     text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffdd00;
     &:hover{
         transform: scale(1.1);
@@ -127,11 +128,9 @@ const Footage = () => {
                 </Frame>
                 <YoutubeEmbed embedId="WGbAhgJ_7lQ"></YoutubeEmbed>
             </VideoWrap>
-            <a href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw">
-            <TextLink>
+            <TextLink href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw">
                 Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>
-            </a>
         </Body>
         <End>
         <Footer></Footer>

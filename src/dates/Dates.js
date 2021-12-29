@@ -95,7 +95,7 @@ const ShowLocation = styled.div`
     font-size: 20px;
     }
 `
-const TicketButton = styled.div`
+const TicketButton = styled.a`
     text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffdd00;
     color: #ffdd00;
     font-weight: 800;
@@ -191,16 +191,17 @@ const Dates = () => {
                             <ShowTitle>{show.title}</ShowTitle>
                         </Section>
                         <ShowLocation>{show.location}</ShowLocation>
-                        <a href={show.link} style={{textDecoration: "none"}}>
-                            <TicketButton>GET TICKETS <span style={{fontFamily: "sans-serif"}}>&#8594;</span></TicketButton>
-                        </a>
+                        <TicketButton href={show.link}>
+                            GET TICKETS <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+                        </TicketButton>
                     </ListItem>
             ))
             :
             (
                 <Nothing>
                 <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
-                <ShowLocation>Book me: {"\b "} <a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
+                <ShowLocation>Book me:</ShowLocation> 
+                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
                 </Nothing>
             )
         }

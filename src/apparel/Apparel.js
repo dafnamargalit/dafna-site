@@ -61,15 +61,16 @@ const Body = styled.div`
 `
 const ImageWrap = styled.div`
     width: 50vh;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         width: 40vh;
     }
 `
 
-const TextLink = styled.div`
+const TextLink = styled.a`
     color:#ffdd00;
     font-weight: 800;
     text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-decoration: none;
     &:hover{
         transform: scale(1.1);
     }
@@ -77,7 +78,7 @@ const TextLink = styled.div`
 
 const End = styled.div` 
     display: none;
-    @media (max-width: 700px){
+    @media (max-width: 800px){
         display: flex;
         align-items: center;
         justify-content: center;
@@ -107,14 +108,12 @@ const Apparel = () => {
             <ImageWrap>
            <img width="100%" src={merch} alt=""></img>
            </ImageWrap>
-           <a href="https://shop.dafna.rocks">
-           <TextLink>
+           <TextLink href="https://shop.dafna.rocks">
                 VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>
-            </a>
         </Body>
         <End>
-        <Footer></Footer>
+            <Footer></Footer>
         </End>
         </ApparelWrap>
     )

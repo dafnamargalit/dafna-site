@@ -36,6 +36,10 @@
     align-items: center;
     justify-content: center;
 }
+
+.Home-Bottom{
+    top: 60vh;
+}
 @media only screen and (max-width: 1024px) { 
 .letters{
     width: 6vh;

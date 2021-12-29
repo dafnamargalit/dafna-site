@@ -1,10 +1,11 @@
 .Navbar {
-    /* width: 100vw; */
-    display: flex;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
 }
 .navLetters {
     z-index: 1000;
@@ -17,17 +18,18 @@
     transform: scale(1.2);
 }
 
+
 .navWrap{
-    position: absolute;
+    position:absolute;
 }
+
+
 .homeIcon {
     width: 5vh;
+    margin: .25vh;
     padding: 0.2em;
     transition: transform .2s;
     left: 0vh;
-    margin-bottom: 5vh;
-    margin-left: 1vw;
-    margin-right: 38vw;
 }
 
 .homeWrap {
@@ -39,4 +41,16 @@
 }
 .homeIcon:hover{
     -webkit-filter: brightness(70%); 
+}
+
+.socialsWrap {
+    position: absolute;
+    top:3vh;
+    right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .socialsWrap{
+        display:none;
+    }
 }

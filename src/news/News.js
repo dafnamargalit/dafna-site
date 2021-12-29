@@ -3,12 +3,19 @@ import Navbar from '../navbar/Navbar';
 import styled from 'styled-components';
 import slide1 from '../assets/images/SLIDE-1.png';
 import slide2 from '../assets/images/SLIDE-2.png';
-import LeftArrow from '../assets/icons/left-merch-Arrow.svg';
-import RightArrow from '../assets/icons/Right-Arrow.svg';
+import slide1m from '../assets/images/SLIDE-1-MOBILE.png';
+import slide2m from '../assets/images/SLIDE-2-MOBILE.png';
+import Slideshow from '../slideshow';
+import Footer from '../footer';
+import N from '../assets/letters/N.svg';
+import E from '../assets/letters/E-G.svg';
+import W from '../assets/letters/W-G.svg';
+import S from '../assets/letters/S-G.svg';
 
 const NewsWrap = styled.div`
     height: 100vh;
     width: 100vw;
+    overflow: scroll;
 `
 const NavbarHeader = styled.div`
     margin-top: 7vh;
@@ -19,9 +26,9 @@ const Header = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 75px;
+    height: 10vh;
+    margin-bottom: 5vh;
     transition: all 0.5s ease 0s;
-    // border-bottom: 1px solid #b9c0ff;
     user-select: none;
 `
 const Title = styled.div`
@@ -33,7 +40,7 @@ const Title = styled.div`
     font-size: 24px;
     width: 100%;
     justify-content: center;
-    height: 50px;
+    height: 75px;
     @media (max-width: 675px) {
     font-size: 20px;
     }
@@ -44,24 +51,46 @@ const Body = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content:center;
-
-`
-const ImageWrap = styled.div`
-    width: 60vw;
-`
-
-const TextLink = styled.div`
-    color:#ffdd00;
-    font-weight: 800;
-    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    &:hover{
-        transform: scale(1.1);
+    @media (max-width: 400px){
+        width: 100vw;
+        overflow: scroll;
     }
 `
 
-const ArrowWrap = styled.div`
-    // padding-left: 2em;
+const End = styled.div`
+    display: none;
+    @media (max-width: 700px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 100vw;
+    }
 `
+
+const ImageWrap = styled.div`
+    width: 60vw;
+    @media (max-width: 768px){
+        width: 63vw;
+    }
+    @media (max-width: 500px){
+        width: 80vw;
+    }
+    @media (max-width: 400px){
+        width: 100vw;
+    }
+`
+
+const Letter = styled.img`
+    width: 7vh;
+    padding: 0.25vh;
+    @media (max-width: 400px){
+        width: 5vh;
+    }
+`
+
+
+const images = [{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'},{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/AlwaysADream'}];
 
 const News = () => {
     return(
@@ -70,19 +99,27 @@ const News = () => {
             <Navbar/>
         </NavbarHeader>
         <Header>
-            <Title> News </Title>
+            <Title>  
+                <Letter src={N}></Letter>
+                <Letter src={E}></Letter>
+                <Letter src={W}></Letter>
+                <Letter src={S}></Letter>
+            </Title>
         </Header>
         <Body>
 
-            <img width="5%" style={{padding: "2em"}} src={LeftArrow} alt=""></img>
+            
             <ImageWrap>
-            <a href="https://shop.dafna.rocks">
-           <img width="100%" src={slide1} alt=""></img>
-           </a>
+
+           <Slideshow slides={images} delay="3500"></Slideshow>
+
            </ImageWrap>
-           <img width="5%" style={{padding: "2em"}} src={RightArrow} alt=""></img>
+
 
         </Body>
+        <End>
+        <Footer></Footer>
+        </End>
         </NewsWrap>
     )
 }

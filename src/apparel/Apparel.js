@@ -2,6 +2,12 @@ import React from 'react';
 import Navbar from '../navbar/Navbar';
 import styled from 'styled-components';
 import merch from '../assets/images/merch.png';
+import Footer from '../footer';
+import A from '../assets/letters/A-Y.svg';
+import P from '../assets/letters/P-Y.svg';
+import R from '../assets/letters/R-Y.svg';
+import E from '../assets/letters/E-Y.svg';
+import L from '../assets/letters/L-Y.svg';
 
 const ApparelWrap = styled.div`
     height: 100vh;
@@ -21,6 +27,16 @@ const Header = styled.div`
     // border-bottom: 1px solid #b9c0ff;
     user-select: none;
 `
+
+const Letter = styled.img`
+    width: 7vh;
+    padding: 0.25vh;
+    @media (max-width: 400px){
+        width: 5vh;
+    }
+`
+
+
 const Title = styled.div`
     display: flex;
     align-items: center;
@@ -45,6 +61,9 @@ const Body = styled.div`
 `
 const ImageWrap = styled.div`
     width: 50vh;
+    @media (max-width: 700px){
+        width: 40vh;
+    }
 `
 
 const TextLink = styled.div`
@@ -56,6 +75,17 @@ const TextLink = styled.div`
     }
 `
 
+const End = styled.div`
+    display: none;
+    @media (max-width: 700px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 100vw;
+    }
+`
+
 const Apparel = () => {
     return(
         <ApparelWrap>
@@ -63,7 +93,15 @@ const Apparel = () => {
             <Navbar/>
         </NavbarHeader>
         <Header>
-            <Title> Apparel </Title>
+            <Title>
+                <Letter src={A}></Letter>
+                <Letter src={P}></Letter>
+                <Letter src={P}></Letter>
+                <Letter src={A}></Letter>
+                <Letter src={R}></Letter>
+                <Letter src={E}></Letter>
+                <Letter src={L}></Letter>
+            </Title>
         </Header>
         <Body>
             <ImageWrap>
@@ -75,6 +113,9 @@ const Apparel = () => {
             </TextLink>
             </a>
         </Body>
+        <End>
+        <Footer></Footer>
+        </End>
         </ApparelWrap>
     )
 }

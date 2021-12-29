@@ -3,6 +3,13 @@ import Navbar from '../navbar/Navbar';
 import styled from 'styled-components';
 import YoutubeEmbed from './YoutubeEmbed';
 import frame from '../assets/icons/frame.svg';
+import Footer from '../footer';
+import F from '../assets/letters/F.svg';
+import O from '../assets/letters/O-B.svg';
+import T from '../assets/letters/T-B.svg';
+import A from '../assets/letters/A-B.svg';
+import G from '../assets/letters/G-B.svg';
+import E from '../assets/letters/E-B.svg';
 
 const FootageWrap = styled.div`
     height: 100vh;
@@ -16,6 +23,16 @@ const NavbarHeader = styled.div`
 const Header = styled.div`
     margin-bottom: 2vh;
 `
+
+const End = styled.div`
+    display: none;
+    @media (max-width: 700px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+    }
+`
 const Title = styled.div`
     display: flex;
     align-items: center;
@@ -25,7 +42,7 @@ const Title = styled.div`
     font-size: 24px;
     width: 100%;
     justify-content: center;
-    height: 50px;
+    height: 75px;
     @media (max-width: 675px) {
     font-size: 20px;
     }
@@ -47,7 +64,7 @@ const Body = styled.div`
     justify-content:center;
     @media (max-width: 1200px){
         top: 0;
-        height: 30vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
     }
@@ -75,6 +92,15 @@ const TextLink = styled.div`
     justify-content: center;
     display:flex;
 `
+
+const Letter = styled.img`
+    width: 7vh;
+    padding: 0.25vh;
+    @media (max-width: 400px){
+        width: 5vh;
+    }
+`
+
 const Footage = () => {
     return(
         <FootageWrap>
@@ -82,7 +108,15 @@ const Footage = () => {
             <Navbar/>
         </NavbarHeader>
         <Header>
-            <Title> Footage </Title>
+            <Title> 
+            <Letter src={F}></Letter>
+            <Letter src={O}></Letter>
+            <Letter src={O}></Letter>
+            <Letter src={T}></Letter>
+            <Letter src={A}></Letter>
+            <Letter src={G}></Letter>
+            <Letter src={E}></Letter>
+            </Title>
         </Header>
         <Body>
             <TextLink>
@@ -99,6 +133,9 @@ const Footage = () => {
             </TextLink>
             </a>
         </Body>
+        <End>
+        <Footer></Footer>
+        </End>
         </FootageWrap>
     )
 }

@@ -1,10 +1,20 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import styled from 'styled-components';
-
+import D from '../assets/letters/D.svg';
+import A from '../assets/letters/A-P.svg';
+import T from '../assets/letters/T-P.svg';
+import E from '../assets/letters/E-P.svg';
+import S from '../assets/letters/S-P.svg';
+import Footer from '../footer';
 
 const DatesWrap = styled.div`
     height: 100vh;
+`
+
+const Letter = styled.img`
+    width: 7vh;
+    padding: 0.25vh;
 `
 
 const NavbarHeader = styled.div`
@@ -14,14 +24,9 @@ const NavbarHeader = styled.div`
 
 const Content = styled.div`
     color: white;
-    // background-color: #302f7c8c;
     display: flex;
     flex-direction: column;
-    // margin-top: 10vh;
-    height: 85vh;
     width: 100vw;
-    // border-top-left-radius: 3em;
-    // border-top-right-radius: 3em;
 `;
 
 const Header = styled.div`
@@ -29,14 +34,14 @@ const Header = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 75px;
+    height: 15vh;
     transition: all 0.5s ease 0s;
-    // border-bottom: 1px solid #b9c0ff;
     user-select: none;
 `
 
 const Body = styled.div`
     overflow: scroll;
+    height: 63vh;
 `
 const Title = styled.div`
     display: flex;
@@ -109,7 +114,6 @@ const ListItem = styled.div`
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); 
-    // border-bottom: 1px solid #a1a6db;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -136,12 +140,121 @@ const Section = styled.div`
 
 const Nothing = styled.div`
     display: flex;  
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1em;
+    height: 10vh;
+`
+
+const End = styled.div`
+    display: none;
+    @media (max-width: 700px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+        width: 100vw;
+    }
 `
 
 const shows = [
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
+{
+    title: 'Dafna at Larimer Lounge',
+    date: 'Dec 11th 2021',
+    location: 'Denver, CO',
+    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+},
 {
     title: 'Dafna at Larimer Lounge',
     date: 'Dec 11th 2021',
@@ -157,7 +270,13 @@ const Dates = () => {
         </NavbarHeader>
         <Content>
             <Header>
-                <Title> Dates </Title>
+                <Title>
+                    <Letter src={D}></Letter>
+                    <Letter src={A}></Letter>
+                    <Letter src={T}></Letter>
+                    <Letter src={E}></Letter>
+                    <Letter src={S}></Letter>
+                </Title>
             </Header>
             <Body>
             {(shows.length > 0) ? shows.map((show, i) => (
@@ -176,11 +295,15 @@ const Dates = () => {
             (
                 <Nothing>
                 <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
+                <ShowLocation>Book me: {"\b "} <a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
                 </Nothing>
             )
         }
           </Body>
         </Content>
+        <End>
+            <Footer></Footer>
+        </End>
         </DatesWrap>
     )
 }

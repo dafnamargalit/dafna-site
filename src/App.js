@@ -11,7 +11,8 @@ const Dates = React.lazy(() => import("./dates/Dates"));
 const Apparel = React.lazy(() => import("./apparel/Apparel"));
 const Footage = React.lazy(() => import("./footage/Footage"));
 const News = React.lazy(() => import("./news/News"));
-const Ask = React.lazy(() => import("./ask/Ask"));
+const About = React.lazy(() => import("./about/About"));
+const Mail = React.lazy(() => import("./mail/Mail"));
 
 export default class App extends Component {
   constructor(props){
@@ -42,7 +43,8 @@ export default class App extends Component {
         <Route exact path='/apparel' component={Apparel}/>
         <Route exact path='/footage' component={Footage}/>
         <Route exact path='/news' component={News}/>
-        <Route exact path='/ask' component={Ask}/>
+        <Route exact path='/about' component={About}/>
+        <Route exact path='/mailing-list' component={Mail}/>
       </div>
       </div>
       </Switch>

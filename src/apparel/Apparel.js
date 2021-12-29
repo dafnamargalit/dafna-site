@@ -107,7 +107,7 @@ const Apparel = () => {
             <ImageWrap>
            <img width="100%" src={merch} alt=""></img>
            </ImageWrap>
-           <a href="https://dafna.bigcartel.com/">
+           <a href="https://shop.dafna.rocks">
            <TextLink>
                 VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>

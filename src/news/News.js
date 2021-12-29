@@ -87,7 +87,7 @@ const Letter = styled.img`
     @media (max-width: 400px){
         width: 5vh;
     }
-`
+` 
 
 
 const images = [{image: slide1, mobile: slide1m, link: 'https://dafna.bigcartel.com/'},{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/AlwaysADream'}];

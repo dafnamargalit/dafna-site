@@ -32,6 +32,7 @@ export default class Home extends Component{
 			<p className="MailingList" onClick={this.openModal}>JOIN MY MAILING LIST</p>
 			</div>
 			<div className="Home-Middle">
+				<div className="Letters-Wrap">
 				<Mail className="modal" onClose={this.openModal} show={this.state.modal}></Mail>
 				<Link to="/dates" style={{textDecoration:'none'}}>
                 <img className="letters" id="D" src={D} alt="D"></img>
@@ -48,7 +49,10 @@ export default class Home extends Component{
 				<Link to="/ask" style={{textDecoration:'none'}}>
                 <img className="letters" id="AP" src={AP} alt="A"></img>
 				</Link>
+				</div>
+				<p className="MailingList">(CLICK ON A LETTER)</p>
 			</div>	
+
 			<div className="Home-Bottom">
 				<Footer></Footer>
 			</div>

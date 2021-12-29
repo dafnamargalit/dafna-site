@@ -159,108 +159,13 @@ const End = styled.div`
 `
 
 const shows = [
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
-{
-    title: 'Dafna at Larimer Lounge',
-    date: 'Dec 11th 2021',
-    location: 'Denver, CO',
-    link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-},
+// {
+//     title: 'Dafna at Larimer Lounge',
+//     date: 'Dec 11th 2021',
+//     location: 'Denver, CO',
+//     link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
+// },
+
 ]
 const Dates = () => {
     return(

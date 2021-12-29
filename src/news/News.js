@@ -90,7 +90,7 @@ const Letter = styled.img`
 `
 
 
-const images = [{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'},{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/AlwaysADream'}];
+const images = [{image: slide1, mobile: slide1m, link: 'https://dafna.bigcartel.com/'},{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/AlwaysADream'}];
 
 const News = () => {
     return(

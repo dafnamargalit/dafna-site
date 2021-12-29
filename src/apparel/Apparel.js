@@ -75,7 +75,7 @@ const TextLink = styled.div`
     }
 `
 
-const End = styled.div`
+const End = styled.div` 
     display: none;
     @media (max-width: 700px){
         display: flex;

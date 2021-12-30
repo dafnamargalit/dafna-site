@@ -1,15 +1,19 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import github from '../assets/icons/github.svg';
 import instagram from '../assets/icons/instagram.svg';
 import spotify from '../assets/icons/spotify.svg';
 import twitter from '../assets/icons/twitter.svg';
-import mail from '../assets/icons/mail.svg';
+import mailIcon from '../assets/icons/mail.svg';
 import youtube from '../assets/icons/youtube.svg';
-
+import Mail from '../mail/Mail';
 const FooterWrap = styled.div`
     display: flex;
+`
+const Modal = styled.div`
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 `
 const FooterIcon = styled.img`
     width: 3.5vh;
@@ -21,30 +25,45 @@ const FooterIcon = styled.img`
         -webkit-filter: brightness(70%); 
     }
 `
-const Footer = () => {
+export default class Home extends Component{
+	constructor(){
+		super();
+		this.state = {
+			modal: false
+		}
+	}
 
+	openModal = () => {
+		this.setState({
+			modal: !this.state.modal
+		})
+		localStorage.setItem('seen', true);
+	}
+
+
+	render(){
     return(
         <FooterWrap>
-            <Link to="https://open.spotify.com/artist/6FR2ARlfDqNU7BMBaWjGZP?si=DSyNj67wTyi1A4G7JZF-0w" style={{textDecoration:'none'}}>
+            <a href="https://open.spotify.com/artist/6FR2ARlfDqNU7BMBaWjGZP?si=DSyNj67wTyi1A4G7JZF-0w" style={{textDecoration:'none'}}>
             <FooterIcon src={spotify} alt="spotify"></FooterIcon>
-            </Link>
-            <Link to="https://instagram.com/dafnamusic" style={{textDecoration:'none'}}>
+            </a>
+            <a href="https://instagram.com/dafnamusic" style={{textDecoration:'none'}}>
             <FooterIcon src={instagram} alt="insta"></FooterIcon>
-            </Link>
-            <Link to="https://twitter.com/dafnamusic" style={{textDecoration:'none'}}>
+            </a>
+            <a href="https://twitter.com/dafnamusic" style={{textDecoration:'none'}}>
             <FooterIcon src={twitter} alt="twit"></FooterIcon>
-            </Link>
-            <Link to="https://github.com/dafnamargalit" style={{textDecoration:'none'}}>
+            </a>
+            <a href="https://github.com/dafnamargalit" style={{textDecoration:'none'}}>
             <FooterIcon src={github} alt="git"></FooterIcon>
-            </Link>
-            <Link to="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw" style={{textDecoration:'none'}}>
+            </a>
+            <a href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw" style={{textDecoration:'none'}}>
             <FooterIcon src={youtube} alt="yt"></FooterIcon>
-            </Link>
-            <Link to="/mailing-list" style={{textDecoration:'none'}}>
-            <FooterIcon src={mail} alt="mail"></FooterIcon>
-            </Link>
+            </a>
+            {/* <FooterIcon src={mailIcon} onClick={this.openModal} alt="mail"></FooterIcon>
+            {this.modal ? (<Modal>
+                <Mail onClose={this.openModal} show={this.state.modal}></Mail>
+            </Modal>) : <></>} */}
         </FooterWrap>
     )
 }
-
-export default Footer;
+}

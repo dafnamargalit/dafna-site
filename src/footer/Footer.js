@@ -4,17 +4,17 @@ import github from '../assets/icons/github.svg';
 import instagram from '../assets/icons/instagram.svg';
 import spotify from '../assets/icons/spotify.svg';
 import twitter from '../assets/icons/twitter.svg';
-import mailIcon from '../assets/icons/mail.svg';
+// import mailIcon from '../assets/icons/mail.svg';
 import youtube from '../assets/icons/youtube.svg';
-import Mail from '../mail/Mail';
+// import Mail from '../mail/Mail';
 const FooterWrap = styled.div`
     display: flex;
 `
-const Modal = styled.div`
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-`
+// const Modal = styled.div`
+//     position: absolute;
+//     width: 100vw;
+//     height: 100vh;
+// `
 const FooterIcon = styled.img`
     width: 3.5vh;
     margin: .25vh;

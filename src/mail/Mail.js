@@ -5,7 +5,7 @@ import AP from '../assets/letters/A-P.svg';
 import F from '../assets/letters/F.svg';
 import N from '../assets/letters/N.svg';
 import AY from '../assets/letters/A-Y.svg';
-import close from '../assets/icons/close.svg';
+// import close from '../assets/icons/close.svg';
 
 import './Mail.css';
 
@@ -22,7 +22,7 @@ export default class Mail extends Component{
         <div className="Mail" onClick={e => {this.onClose(e);}}>
         <div className="Mail-Modal">
         <div className="header">
-        <img src={close} onClick={e => {this.onClose(e);}} className="close" alt="close"></img>
+        {/* <img src={close} onClick={e => {this.onClose(e);}} className="close" alt="close"></img> */}
         </div>
         <div className="mail-letters">
         <img src={D} className="logo" alt="logo"></img>

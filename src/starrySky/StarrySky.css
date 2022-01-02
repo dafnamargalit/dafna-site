@@ -12,6 +12,7 @@ body {
   }
   
   #shootingstars {
+    will-change: transform;
     margin: 0;
     padding: 0;
     width: 150vh;

@@ -50,7 +50,7 @@ export default class Home extends Component{
                 <img className="letters" id="AP" src={AP} alt="A"></img>
 				</Link>
 				</div>
-				<p className="MailingList">(CLICK ON A LETTER)</p>
+				<p className="LetterClick">(CLICK ON A LETTER)</p>
 			</div>	
 
 			<div className="Home-Bottom">

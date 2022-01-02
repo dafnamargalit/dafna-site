@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import './App.css';
@@ -43,6 +43,7 @@ export default class App extends Component {
   <StarrySky />
  <Router>
       <Switch>
+      <Fragment>
       <div>
       <div className='content'>
         <Route exact path='/'component={Home}/>
@@ -54,6 +55,7 @@ export default class App extends Component {
         <Route exact path='/mailing-list' component={Mail}/>
       </div>
       </div>
+      </Fragment>
       </Switch>
       {/* <Route path='*' component={NotFound} /> */}
     </Router>

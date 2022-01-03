@@ -46,7 +46,7 @@ export default class Home extends Component{
 				<Link to="/news" style={{textDecoration:'none'}}>
                 <img className="letters" id="N" src={N} alt="N"></img>
 				</Link>
-				<Link to="/ask" style={{textDecoration:'none'}}>
+				<Link to="/about" style={{textDecoration:'none'}}>
                 <img className="letters" id="AP" src={AP} alt="A"></img>
 				</Link>
 				</div>

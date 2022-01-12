@@ -159,12 +159,12 @@ const End = styled.div`
 `
 
 const shows = [
-// {
-//     title: 'Dafna at Larimer Lounge',
-//     date: 'Dec 11th 2021',
-//     location: 'Denver, CO',
-//     link: 'https://www.etix.com/ticket/p/5397009/dafna-wmellowpunk-presented-by-kgnu-denver-larimer-lounge?partner_id=240'
-// },
+{
+    title: 'Summer Salt with Dafna at The Fox Theatre',
+    date: 'Jan 17th 2022',
+    location: 'Boulder, CO',
+    link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
+},
 
 ]
 const Dates = () => {

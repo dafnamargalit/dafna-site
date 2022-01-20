@@ -128,7 +128,7 @@ const Footage = () => {
                 </Frame>
                 <YoutubeEmbed embedId="WGbAhgJ_7lQ"></YoutubeEmbed>
             </VideoWrap>
-            <TextLink href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw">
+            <TextLink href="https://youtu.be/x6eaMbT2iCo">
                 Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>
         </Body>

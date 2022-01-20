@@ -4,7 +4,6 @@ import './Slideshow.css';
 function Slideshow(props) {
 
   const {slides, delay} = props;
-  console.log(slides, delay);
   const [index, setIndex] = React.useState(0);
   const [width, setWidth] = React.useState(window.innerWidth);
   const timeoutRef = React.useRef(null);
@@ -47,17 +46,18 @@ function Slideshow(props) {
       >
         {slides.map((slide, index) => (
         !isMobile ?
-        (<a href={slide.link}>
+        (<a href={slide.link}
+          key={index}>
           <img
             className="slide"
             width="100%"
-            key={index}
             src={slide.image}
             alt=""
           ></img>
           </a>)
           :
-          (<a href={slide.link}>
+          (<a href={slide.link}
+            key={index}>
             <img
               className="slide"
               width="100%"

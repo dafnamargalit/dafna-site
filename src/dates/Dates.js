@@ -159,12 +159,12 @@ const End = styled.div`
 `
 
 const shows = [
-{
-    title: 'Summer Salt with Dafna at The Fox Theatre',
-    date: 'Jan 17th 2022',
-    location: 'Boulder, CO',
-    link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
-},
+// {
+//     title: 'Summer Salt with Dafna at The Fox Theatre',
+//     date: 'Jan 17th 2022',
+//     location: 'Boulder, CO',
+//     link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
+// },
 
 ]
 const Dates = () => {

@@ -8,6 +8,63 @@ import E from '../assets/letters/E-P.svg';
 import S from '../assets/letters/S-P.svg';
 import Footer from '../footer';
 
+
+const shows = [
+// {
+//     title: 'Summer Salt with Dafna at The Fox Theatre',
+//     date: 'Jan 17th 2022',
+//     location: 'Boulder, CO',
+//     link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
+// },
+
+]
+const Dates = () => {
+    return(
+        <DatesWrap>
+        <NavbarHeader>
+            <Navbar/>
+        </NavbarHeader>
+        <Content>
+            <Header>
+                <Title>
+                    <Letter src={D}></Letter>
+                    <Letter src={A}></Letter>
+                    <Letter src={T}></Letter>
+                    <Letter src={E}></Letter>
+                    <Letter src={S}></Letter>
+                </Title>
+            </Header>
+            <Body>
+            {(shows.length > 0) ? shows.map((show, i) => (
+                    <ListItem key={i}>
+                        <Section>
+                            <ShowDate>{show.date}</ShowDate>
+                            <ShowTitle>{show.title}</ShowTitle>
+                        </Section>
+                        <ShowLocation>{show.location}</ShowLocation>
+                        <TicketButton href={show.link}>
+                            GET TICKETS <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+                        </TicketButton>
+                    </ListItem>
+            ))
+            :
+            (
+                <Nothing>
+                <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
+                <ShowLocation>Book me:</ShowLocation> 
+                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
+                </Nothing>
+            )
+        }
+          </Body>
+        </Content>
+        <End>
+            <Footer></Footer>
+        </End>
+        </DatesWrap>
+    )
+}
+
 const DatesWrap = styled.div`
     height: 100vh;
 `
@@ -158,60 +215,5 @@ const End = styled.div`
     }
 `
 
-const shows = [
-// {
-//     title: 'Summer Salt with Dafna at The Fox Theatre',
-//     date: 'Jan 17th 2022',
-//     location: 'Boulder, CO',
-//     link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
-// },
-
-]
-const Dates = () => {
-    return(
-        <DatesWrap>
-        <NavbarHeader>
-            <Navbar/>
-        </NavbarHeader>
-        <Content>
-            <Header>
-                <Title>
-                    <Letter src={D}></Letter>
-                    <Letter src={A}></Letter>
-                    <Letter src={T}></Letter>
-                    <Letter src={E}></Letter>
-                    <Letter src={S}></Letter>
-                </Title>
-            </Header>
-            <Body>
-            {(shows.length > 0) ? shows.map((show, i) => (
-                    <ListItem key={i}>
-                        <Section>
-                            <ShowDate>{show.date}</ShowDate>
-                            <ShowTitle>{show.title}</ShowTitle>
-                        </Section>
-                        <ShowLocation>{show.location}</ShowLocation>
-                        <TicketButton href={show.link}>
-                            GET TICKETS <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
-                        </TicketButton>
-                    </ListItem>
-            ))
-            :
-            (
-                <Nothing>
-                <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
-                <ShowLocation>Book me:</ShowLocation> 
-                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
-                </Nothing>
-            )
-        }
-          </Body>
-        </Content>
-        <End>
-            <Footer></Footer>
-        </End>
-        </DatesWrap>
-    )
-}
 
 export default Dates;

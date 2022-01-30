@@ -11,16 +11,6 @@ import News from './news/News';
 import About from './about/About';
 import Mail from './mail/Mail';
 
-// // const Landing = React.lazy(() => import("../Landing"));
-// // const NotFound = React.lazy(() => import("../NotFound"));
-// const Home = React.lazy(() => import("./home/Home"));
-// const Dates = React.lazy(() => import("./dates/Dates"));
-// const Apparel = React.lazy(() => import("./apparel/Apparel"));
-// const Footage = React.lazy(() => import("./footage/Footage"));
-// const News = React.lazy(() => import("./news/News"));
-// const About = React.lazy(() => import("./about/About"));
-// const Mail = React.lazy(() => import("./mail/Mail"));
-
 export default class App extends Component {
   constructor(props){
     super(props);

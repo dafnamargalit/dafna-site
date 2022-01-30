@@ -11,6 +11,44 @@ import A from '../assets/letters/A-B.svg';
 import G from '../assets/letters/G-B.svg';
 import E from '../assets/letters/E-B.svg';
 
+const Footage = () => {
+    return(
+        <FootageWrap>
+        <NavbarHeader>
+            <Navbar/>
+        </NavbarHeader>
+        <Header>
+            <Title> 
+            <Letter src={F}></Letter>
+            <Letter src={O}></Letter>
+            <Letter src={O}></Letter>
+            <Letter src={T}></Letter>
+            <Letter src={A}></Letter>
+            <Letter src={G}></Letter>
+            <Letter src={E}></Letter>
+            </Title>
+        </Header>
+        <Body>
+            <TextLink>
+            </TextLink>
+            <VideoWrap>
+                <Frame>
+                <img width="100%" src={frame} alt=""></img>
+                </Frame>
+                <YoutubeEmbed embedId="WGbAhgJ_7lQ"></YoutubeEmbed>
+            </VideoWrap>
+            <TextLink href="https://youtu.be/x6eaMbT2iCo">
+                Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+            </TextLink>
+        </Body>
+        <End>
+        <Footer></Footer>
+        </End>
+        </FootageWrap>
+    )
+}
+
+
 const FootageWrap = styled.div`
     height: 100vh;
 
@@ -102,41 +140,5 @@ const Letter = styled.img`
     }
 `
 
-const Footage = () => {
-    return(
-        <FootageWrap>
-        <NavbarHeader>
-            <Navbar/>
-        </NavbarHeader>
-        <Header>
-            <Title> 
-            <Letter src={F}></Letter>
-            <Letter src={O}></Letter>
-            <Letter src={O}></Letter>
-            <Letter src={T}></Letter>
-            <Letter src={A}></Letter>
-            <Letter src={G}></Letter>
-            <Letter src={E}></Letter>
-            </Title>
-        </Header>
-        <Body>
-            <TextLink>
-            </TextLink>
-            <VideoWrap>
-                <Frame>
-                <img width="100%" src={frame} alt=""></img>
-                </Frame>
-                <YoutubeEmbed embedId="WGbAhgJ_7lQ"></YoutubeEmbed>
-            </VideoWrap>
-            <TextLink href="https://youtu.be/x6eaMbT2iCo">
-                Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
-            </TextLink>
-        </Body>
-        <End>
-        <Footer></Footer>
-        </End>
-        </FootageWrap>
-    )
-}
 
 export default Footage;

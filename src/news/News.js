@@ -12,6 +12,41 @@ import E from '../assets/letters/E-G.svg';
 import W from '../assets/letters/W-G.svg';
 import S from '../assets/letters/S-G.svg';
 
+
+const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/WeJumpedTheGun'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'}];
+
+const News = () => {
+    return(
+        <NewsWrap>
+        <NavbarHeader>
+            <Navbar/>
+        </NavbarHeader>
+        <Header>
+            <Title>  
+                <Letter src={N}></Letter>
+                <Letter src={E}></Letter>
+                <Letter src={W}></Letter>
+                <Letter src={S}></Letter>
+            </Title>
+        </Header>
+        <Body>
+
+            
+            <ImageWrap>
+
+           <Slideshow slides={images} delay="3500"></Slideshow>
+
+           </ImageWrap>
+
+
+        </Body>
+        <End>
+        <Footer></Footer>
+        </End>
+        </NewsWrap>
+    )
+}
+
 const NewsWrap = styled.div`
     height: 100vh;
     width: 100vw;
@@ -91,39 +126,5 @@ const Letter = styled.img`
     }
 `
 
-
-const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/WeJumpedTheGun'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'}];
-
-const News = () => {
-    return(
-        <NewsWrap>
-        <NavbarHeader>
-            <Navbar/>
-        </NavbarHeader>
-        <Header>
-            <Title>  
-                <Letter src={N}></Letter>
-                <Letter src={E}></Letter>
-                <Letter src={W}></Letter>
-                <Letter src={S}></Letter>
-            </Title>
-        </Header>
-        <Body>
-
-            
-            <ImageWrap>
-
-           <Slideshow slides={images} delay="3500"></Slideshow>
-
-           </ImageWrap>
-
-
-        </Body>
-        <End>
-        <Footer></Footer>
-        </End>
-        </NewsWrap>
-    )
-}
 
 export default News;

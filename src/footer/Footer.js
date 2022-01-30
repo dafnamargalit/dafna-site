@@ -7,24 +7,7 @@ import twitter from '../assets/icons/twitter.svg';
 // import mailIcon from '../assets/icons/mail.svg';
 import youtube from '../assets/icons/youtube.svg';
 // import Mail from '../mail/Mail';
-const FooterWrap = styled.div`
-    display: flex;
-`
-// const Modal = styled.div`
-//     position: absolute;
-//     width: 100vw;
-//     height: 100vh;
-// `
-const FooterIcon = styled.img`
-    width: 3.5vh;
-    margin: .25vh;
-    padding: 0.2em;
-    transition: transform .2s;
-    left: 0vh;
-    &:hover{
-        -webkit-filter: brightness(70%); 
-    }
-`
+
 export default class Home extends Component{
 	constructor(){
 		super();
@@ -67,3 +50,22 @@ export default class Home extends Component{
     )
 }
 }
+
+const FooterWrap = styled.div`
+    display: flex;
+`
+// const Modal = styled.div`
+//     position: absolute;
+//     width: 100vw;
+//     height: 100vh;
+// `
+const FooterIcon = styled.img`
+    width: 3.5vh;
+    margin: .25vh;
+    padding: 0.2em;
+    transition: transform .2s;
+    left: 0vh;
+    &:hover{
+        -webkit-filter: brightness(70%); 
+    }
+`

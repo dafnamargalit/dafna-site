@@ -9,6 +9,39 @@ import R from '../assets/letters/R-Y.svg';
 import E from '../assets/letters/E-Y.svg';
 import L from '../assets/letters/L-Y.svg';
 
+
+const Apparel = () => {
+    return(
+        <ApparelWrap>
+        <NavbarHeader>
+            <Navbar/>
+        </NavbarHeader>
+        <Header>
+            <Title>
+                <Letter src={A}></Letter>
+                <Letter src={P}></Letter>
+                <Letter src={P}></Letter>
+                <Letter src={A}></Letter>
+                <Letter src={R}></Letter>
+                <Letter src={E}></Letter>
+                <Letter src={L}></Letter>
+            </Title>
+        </Header>
+        <Body>
+            <ImageWrap>
+           <img width="100%" src={merch} alt=""></img>
+           </ImageWrap>
+           <TextLink href="https://shop.dafna.rocks">
+                VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+            </TextLink>
+        </Body>
+        <End>
+            <Footer></Footer>
+        </End>
+        </ApparelWrap>
+    )
+}
+
 const ApparelWrap = styled.div`
     height: 100vh;
     width: 100vw;
@@ -86,37 +119,5 @@ const End = styled.div`
         width: 100vw;
     }
 `
-
-const Apparel = () => {
-    return(
-        <ApparelWrap>
-        <NavbarHeader>
-            <Navbar/>
-        </NavbarHeader>
-        <Header>
-            <Title>
-                <Letter src={A}></Letter>
-                <Letter src={P}></Letter>
-                <Letter src={P}></Letter>
-                <Letter src={A}></Letter>
-                <Letter src={R}></Letter>
-                <Letter src={E}></Letter>
-                <Letter src={L}></Letter>
-            </Title>
-        </Header>
-        <Body>
-            <ImageWrap>
-           <img width="100%" src={merch} alt=""></img>
-           </ImageWrap>
-           <TextLink href="https://shop.dafna.rocks">
-                VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
-            </TextLink>
-        </Body>
-        <End>
-            <Footer></Footer>
-        </End>
-        </ApparelWrap>
-    )
-}
 
 export default Apparel;

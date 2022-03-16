@@ -13,7 +13,7 @@ import W from '../assets/letters/W-G.svg';
 import S from '../assets/letters/S-G.svg';
 
 
-const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/NowIKnow'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'}];
+const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/TheManInMyDreams'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'}];
 
 const News = () => {
     return(

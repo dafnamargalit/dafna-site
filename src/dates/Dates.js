@@ -10,11 +10,17 @@ import Footer from '../footer';
 
 
 const shows = [
+{
+    title: 'Yoke Lore with Dafna at The Fox Theatre',
+    date: 'March 25th 2022',
+    location: 'Boulder, CO',
+    link: 'https://www.axs.com/events/425669/yoke-lore-tickets'
+},
 // {
-//     title: 'Summer Salt with Dafna at The Fox Theatre',
-//     date: 'Jan 17th 2022',
+//     title: 'Dafna with Oh Paris at eTown Music Hall',
+//     date: 'May 13th 2022',
 //     location: 'Boulder, CO',
-//     link: 'https://www.axs.com/events/421829/summer-salt-with-dafna-tickets'
+//     link: ''
 // },
 
 ]

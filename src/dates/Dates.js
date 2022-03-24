@@ -10,11 +10,17 @@ import Footer from '../footer';
 
 
 const shows = [
+    {
+        title: 'Yoke Lore with Dafna at The Complex SLC',
+        date: 'March 24th 2022',
+        location: 'Salt Lake City, Utah',
+        link: 'https://tickets.thecomplexslc.com/event/yoke-lore'
+    },
 {
     title: 'Yoke Lore with Dafna at The Fox Theatre',
     date: 'March 25th 2022',
     location: 'Boulder, CO',
-    link: 'https://www.axs.com/events/425669/yoke-lore-tickets'
+    link: 'https://www.axs.com/events/425669/yoke-lore-with-dafna-tickets'
 },
 // {
 //     title: 'Dafna with Oh Paris at eTown Music Hall',

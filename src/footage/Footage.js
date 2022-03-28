@@ -35,7 +35,7 @@ const Footage = () => {
                 <Frame>
                 <img width="100%" src={frame} alt=""></img>
                 </Frame>
-                <YoutubeEmbed embedId="CIskK9MeT5U"></YoutubeEmbed>
+                <YoutubeEmbed embedId="hZ1g_RTNSoA"></YoutubeEmbed>
             </VideoWrap>
             <TextLink href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw">
                 Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>

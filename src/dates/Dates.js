@@ -11,68 +11,56 @@ import Footer from '../footer';
 
 const shows = [
     {
-        title: 'Yoke Lore with Dafna at The Complex SLC',
-        date: 'March 24th 2022',
-        location: 'Salt Lake City, Utah',
-        link: 'https://tickets.thecomplexslc.com/event/yoke-lore'
+        title: 'Dafna with Oh Paris at eTown Music Hall',
+        date: 'May 13th 2022',
+        location: 'Boulder, CO',
+        link: 'https://www.etown.org/events/dafna/'
     },
-{
-    title: 'Yoke Lore with Dafna at The Fox Theatre',
-    date: 'March 25th 2022',
-    location: 'Boulder, CO',
-    link: 'https://www.axs.com/events/425669/yoke-lore-with-dafna-tickets'
-},
-// {
-//     title: 'Dafna with Oh Paris at eTown Music Hall',
-//     date: 'May 13th 2022',
-//     location: 'Boulder, CO',
-//     link: ''
-// },
 
 ]
 const Dates = () => {
-    return(
+    return (
         <DatesWrap>
-        <NavbarHeader>
-            <Navbar/>
-        </NavbarHeader>
-        <Content>
-            <Header>
-                <Title>
-                    <Letter src={D}></Letter>
-                    <Letter src={A}></Letter>
-                    <Letter src={T}></Letter>
-                    <Letter src={E}></Letter>
-                    <Letter src={S}></Letter>
-                </Title>
-            </Header>
-            <Body>
-            {(shows.length > 0) ? shows.map((show, i) => (
-                    <ListItem key={i}>
-                        <Section>
-                            <ShowDate>{show.date}</ShowDate>
-                            <ShowTitle>{show.title}</ShowTitle>
-                        </Section>
-                        <ShowLocation>{show.location}</ShowLocation>
-                        <TicketButton href={show.link}>
-                            GET TICKETS <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
-                        </TicketButton>
-                    </ListItem>
-            ))
-            :
-            (
-                <Nothing>
-                <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
-                <ShowLocation>Book me:</ShowLocation> 
-                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{color: "#ffdd00"}}> bookings@dafna.rocks</a></ShowLocation>
-                </Nothing>
-            )
-        }
-          </Body>
-        </Content>
-        <End>
-            <Footer></Footer>
-        </End>
+            <NavbarHeader>
+                <Navbar />
+            </NavbarHeader>
+            <Content>
+                <Header>
+                    <Title>
+                        <Letter src={D}></Letter>
+                        <Letter src={A}></Letter>
+                        <Letter src={T}></Letter>
+                        <Letter src={E}></Letter>
+                        <Letter src={S}></Letter>
+                    </Title>
+                </Header>
+                <Body>
+                    {(shows.length > 0) ? shows.map((show, i) => (
+                        <ListItem key={i}>
+                            <Section>
+                                <ShowDate>{show.date}</ShowDate>
+                                <ShowTitle>{show.title}</ShowTitle>
+                            </Section>
+                            <ShowLocation>{show.location}</ShowLocation>
+                            <TicketButton href={show.link}>
+                                GET TICKETS <span style={{ fontFamily: "sans-serif" }}>&#8594;</span>
+                            </TicketButton>
+                        </ListItem>
+                    ))
+                        :
+                        (
+                            <Nothing>
+                                <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
+                                <ShowLocation>Book me:</ShowLocation>
+                                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{ color: "#ffdd00" }}> bookings@dafna.rocks</a></ShowLocation>
+                            </Nothing>
+                        )
+                    }
+                </Body>
+            </Content>
+            <End>
+                <Footer></Footer>
+            </End>
         </DatesWrap>
     )
 }

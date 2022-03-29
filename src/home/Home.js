@@ -8,6 +8,7 @@ import AY from '../assets/letters/A-Y.svg';
 import Mail from '../mail/Mail';
 import Footer from '../footer';
 import styled from 'styled-components';
+import Unscrambler from '../unscrambler/Unscrambler';
 
 export default class Home extends Component {
 	constructor() {
@@ -28,7 +29,8 @@ export default class Home extends Component {
 	render() {
 		return (
 			<HomeWrap>
-				<HomeTop>
+				<Unscrambler/>
+				{/* <HomeTop>
 					<MailingList onClick={this.openModal}>JOIN MY MAILING LIST</MailingList>
 				</HomeTop>
 				<HomeMiddle>
@@ -55,7 +57,7 @@ export default class Home extends Component {
 
 				<HomeBottom>
 					<Footer />
-				</HomeBottom>
+				</HomeBottom> */}
 			</HomeWrap>
 		);
 	}
@@ -92,6 +94,7 @@ const MailingList = styled.p`
 	color:#ffdd00;
 	text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 	font-weight: 800;
+	transition: transform .2s;
 
 	&:hover{
 		transform: scale(1.1);

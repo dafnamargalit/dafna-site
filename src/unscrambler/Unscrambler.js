@@ -4,6 +4,7 @@ import Box from './box';
 import Letter from './letter';
 import { Link } from 'react-router-dom';
 import tracklist from '../assets/images/tracklist.png';
+import Reset from '../assets/icons/reset.svg';
 
 const Letters = ['I', 'E', 'T', 'W', 'S', 'A', 'N', 'H', 'H', 'Y', 'W', 'W', 'I', 'O', 'U'];
 
@@ -14,8 +15,8 @@ export default class Unscrambler extends React.Component {
     };
 
     componentDidMount() {
-       const img = new Image();
-       img.src = tracklist;
+        const img = new Image();
+        img.src = tracklist;
     }
 
     reset = () => {
@@ -78,27 +79,24 @@ export default class Unscrambler extends React.Component {
                     <Box id="box-13" className="box" name="Y" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-14" className="box" name="O" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-15" className="box" name="U" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
+                    {this.state.winner === false && <ResetIcon src={Reset} onClick={this.reset} />}
                 </LetterRow>
-                {this.state.winner === false && <Box id="letter-box" name="drop-box" className="box" width="300px" height="200px" targetKey="dropBox">
-                    {Letters.map((l, i) => (
-                        <Letter id={`letter` + i} value={l} label={`letter` + i} targetKey="letter" className="letter" draggable="true">
-                            <p>{l}</p>
-                        </Letter>
-                    ))}
-                </Box>}
+                {this.state.winner === false &&
+                    <Box id="letter-box" name="drop-box" className="box" width="250px" height="200px" targetKey="dropBox">
+                        {Letters.map((l, i) => (
+                            <Letter id={`letter` + i} value={l} label={`letter` + i} targetKey="letter" className="letter" draggable="true">
+                                <p>{l}</p>
+                            </Letter>
+                        ))}
+                    </Box>}
                 <LetterRow>
                     {
-                        this.state.winner === true ?
-                            <div style={{textAlign: "center"}}>
-                                <h1>You Win!</h1>
-                                <Refresh onClick={this.revealTracklist}>Reveal Tracklist</Refresh>
-                                <Refresh onClick={this.reset}>Play Again</Refresh>
-                            </div>
-
-                            :
-                            <Refresh onClick={this.reset}>
-                                RESET
-                            </Refresh>
+                        this.state.winner === true &&
+                        <div style={{ textAlign: "center" }}>
+                            <h1>You Win!</h1>
+                            <Refresh onClick={this.revealTracklist}>Reveal Tracklist</Refresh>
+                            <Refresh onClick={this.reset}>Play Again</Refresh>
+                        </div>
                     }
                 </LetterRow>
 
@@ -113,7 +111,6 @@ const UnscramblerWrap = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
-    padding: 10vh;
 `;
 
 const Title = styled.h1`
@@ -154,4 +151,11 @@ const Refresh = styled.div`
     &:hover{
         background-color: #4673b8;
     }
+`;
+
+const ResetIcon = styled.img`
+    margin-left: 20vh;
+    margin-top: 2vh;
+    position: absolute;
+    width: 4vh;
 `;

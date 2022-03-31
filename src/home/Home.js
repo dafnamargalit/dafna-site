@@ -152,11 +152,13 @@ const GameModal = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 	background-color: #5e96ea;
 	color: white;
-	padding: 10vh;
+	padding: 8vh;
 	border-radius: 2em;
+	margin: 2vh;
 `;
 
 const BeginButton = styled.div`

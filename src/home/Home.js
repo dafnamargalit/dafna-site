@@ -8,7 +8,6 @@ import AY from '../assets/letters/A-Y.svg';
 import Mail from '../mail/Mail';
 import Footer from '../footer';
 import styled from 'styled-components';
-import Unscrambler from '../unscrambler/Unscrambler';
 
 export default class Home extends Component {
 	constructor() {

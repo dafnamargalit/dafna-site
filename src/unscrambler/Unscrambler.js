@@ -52,7 +52,7 @@ export default class Unscrambler extends React.Component {
                 {this.state.reveal && <ImageWrap onClick={this.revealTracklist}>
                     <Tracklist src={tracklist} alt="tracklist" />
                 </ImageWrap>}
-                <h1>guess the album name</h1>
+                <Title>guess the album name</Title>
                 <p>(can't move once dropped)</p>
                 <LetterRow>
                     <Box id="box-1" className="box" name="W" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
@@ -79,7 +79,7 @@ export default class Unscrambler extends React.Component {
                     <Box id="box-14" className="box" name="O" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-15" className="box" name="U" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                 </LetterRow>
-                {this.state.winner === false && <Box id="letter-box" name="drop-box" className="box" width="300px" height="300px" targetKey="dropBox">
+                {this.state.winner === false && <Box id="letter-box" name="drop-box" className="box" width="300px" height="200px" targetKey="dropBox">
                     {Letters.map((l, i) => (
                         <Letter id={`letter` + i} value={l} label={`letter` + i} targetKey="letter" className="letter" draggable="true">
                             <p>{l}</p>
@@ -113,8 +113,12 @@ const UnscramblerWrap = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 10vh;
 `;
 
+const Title = styled.h1`
+    font-size: 20px;
+`;
 const LetterRow = styled.div`
     display: flex;
     justify-content: space-between;

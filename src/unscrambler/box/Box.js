@@ -42,15 +42,15 @@ function Box(props) {
 
 const BoxWrap = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
-    width: ${({ width }) => width ? `${width}` : "50px"};
-    max-width: ${({ width }) => width ? `${width}` : "50px"};
-    height: ${({ height }) => height ? `${height}` : "50px"};
-    max-height: ${({ height }) => height ? `${height}` : "50px"};
+    width: ${({ width }) => width ? `${width}` : "40px"};
+    max-width: ${({ width }) => width ? `${width}` : "40px"};
+    height: ${({ height }) => height ? `${height}` : "40px"};
+    max-height: ${({ height }) => height ? `${height}` : "40px"};
     border: solid 1px white;
     margin: 5px;
 `;

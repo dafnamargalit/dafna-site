@@ -14,7 +14,8 @@ export default class Home extends Component {
 	constructor() {
 		super();
 		this.state = {
-			modal: false
+			modal: false,
+			game: true,
 		}
 	}
 
@@ -25,17 +26,38 @@ export default class Home extends Component {
 		localStorage.setItem('seen', true);
 	}
 
-
+	playGame = () => {
+		this.setState({
+			game: !this.state.game
+		})
+		localStorage.setItem('played', true);
+	}
 	render() {
 		return (
 			<HomeWrap>
-				<Unscrambler/>
-				{/* <HomeTop>
+				<HomeTop>
 					<MailingList onClick={this.openModal}>JOIN MY MAILING LIST</MailingList>
+					<Link to="/guess" style={{textDecoration: "none"}}>
+						<MailingList>GUESS ALBUM NAME</MailingList>
+					</Link>
 				</HomeTop>
 				<HomeMiddle>
 					<LettersWrap>
 						<Modal onClose={this.openModal} show={this.state.modal}></Modal>
+						{(this.state.game === true && localStorage.getItem('played') === null) && 
+						<GameModalWrap onClick={this.playGame}>
+							<GameModal>
+								<h1>Let's play a game...</h1>
+								<p>Guess the name of my upcoming album based on scrambled letters.</p>
+								<p>First three people to guess correctly and send me a screenshot get some free merch.</p>
+								<Link to="/guess" style={{textDecoration: "none"}}>
+									<BeginButton>
+										LET'S PLAY
+									</BeginButton>
+								</Link>
+								<No onClick={this.playGame}>No, I hate games. Take me to the site.</No>
+							</GameModal>
+						</GameModalWrap>}
 						<Link to="/dates" style={{ textDecoration: 'none' }}>
 							<Letters src={D} alt="D" />
 						</Link>
@@ -57,7 +79,7 @@ export default class Home extends Component {
 
 				<HomeBottom>
 					<Footer />
-				</HomeBottom> */}
+				</HomeBottom>
 			</HomeWrap>
 		);
 	}
@@ -74,7 +96,11 @@ const HomeWrap = styled.div`
 const HomeTop = styled.div`
 	display:flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
+	width: 100vw;
+	@media (max-width: 600px) { 
+		flex-direction: column;
+	}
 `;
 
 const HomeMiddle = styled.div`
@@ -95,7 +121,8 @@ const MailingList = styled.p`
 	text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 	font-weight: 800;
 	transition: transform .2s;
-
+	text-decoration: none;
+	margin-top: 5vh;
 	&:hover{
 		transform: scale(1.1);
 	}
@@ -111,6 +138,49 @@ const Modal = styled(Mail)`
 
 `;
 
+const GameModalWrap = styled.div`
+	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+	z-index: 1000;
+`;
+
+const GameModal = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #5e96ea;
+	color: white;
+	padding: 10vh;
+	border-radius: 2em;
+`;
+
+const BeginButton = styled.div`
+	padding: 15px 30px 15px 30px;
+	background-color: #fff;
+	color: #5e96ea;
+	border-radius: 1em;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2vh;
+
+	&:hover{
+		background-color: #4673b8;
+		color: white;
+	}
+`;
+
+const No = styled.p`
+	cursor: pointer;
+	text-decoration: underline;
+`;
 const LetterClick = styled.p`
 	will-change: transform;
 	color:#ffdd00;

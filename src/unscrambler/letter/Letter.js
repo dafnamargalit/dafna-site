@@ -1,61 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
+import { DragDropContainer } from 'react-drag-drop-container';
 
 function Letter(props) {
-    // var letter = document.getElementsByClassName('letter');
-
-    // letter.addEventListener('touchmove', function (e) {
-    //     const target = e.target;
-
-    //     e.dataTransfer.setData('letter_id', target.id);
-
-    //     setTimeout(() => {
-    //         target.style.display = "none";
-    //     }, 0);
-    // });
-
-    // letter.addEventListener('touchend', function (e) {
-    //     // current box position.
-    //     if (e.target.style.display === 'none') {
-    //         e.target.style.display = 'flex';
-    //     }
-    // });
-    const dragStart = e => {
-        const target = e.target;
-
-        e.dataTransfer.setData('letter_id', target.id);
-
-        setTimeout(() => {
-            target.style.display = "none";
-        }, 0);
-    }
-
-    const dragOver = e => {
+    const handleDrop = e => {
+        e.preventDefault();
         e.stopPropagation();
     }
 
-    const dragEnd = e => {
-        if (e.target.style.display === 'none') {
-            e.target.style.display = 'flex';
-        }
-    }
-
     return (
-        <LetterWrap
-            id={props.id}
-            className={props.className}
-            draggable={props.draggable}
-            onDragStart={dragStart}
-            onDragOver={dragOver}
-            onDragEnd={dragEnd}
+        <DragDropContainer
+            targetKey={props.targetKey}
+            dragData={{ label: props.label, value: props.value }}
+            onDrop={handleDrop}
+
         >
-            {props.children}
-        </LetterWrap>
+            <LetterWrap
+                id={props.id}
+                className={props.className}
+            >
+                {props.children}
+            </LetterWrap>
+        </DragDropContainer >
     )
+
 }
 
 const LetterWrap = styled.div`
-    background-color: blue;
+    background-color: #5e96ea;
     border: solid 1px white;
     cursor: pointer;
     width: 50px;

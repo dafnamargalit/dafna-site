@@ -10,6 +10,7 @@ import Footage from './footage/Footage';
 import News from './news/News';
 import About from './about/About';
 import Mail from './mail/Mail';
+import Unscrambler from './unscrambler/Unscrambler';
 
 export default class App extends Component {
   constructor(props){
@@ -42,6 +43,7 @@ export default class App extends Component {
         <Route exact path='/footage' component={Footage}/>
         <Route exact path='/news' component={News}/>
         <Route exact path='/about' component={About}/>
+        <Route exact path='/guess' component={Unscrambler}/>
         <Route exact path='/mailing-list' component={Mail}/>
       </div>
       </div>

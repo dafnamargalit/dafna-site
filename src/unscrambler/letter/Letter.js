@@ -30,8 +30,8 @@ const LetterWrap = styled.div`
     background-color: #5e96ea;
     border: solid 1px white;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content:center;

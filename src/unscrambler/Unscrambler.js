@@ -54,7 +54,7 @@ export default class Unscrambler extends React.Component {
                     <Tracklist src={tracklist} alt="tracklist" />
                 </ImageWrap>}
                 <Title>guess the album name</Title>
-                <p>(can't move once dropped)</p>
+                <p>(drag and drop)</p>
                 <LetterRow>
                     <Box id="box-1" className="box" name="W" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-2" className="box" name="H" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />

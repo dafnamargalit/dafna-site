@@ -79,7 +79,7 @@ export default class Unscrambler extends React.Component {
                     <Box id="box-13" className="box" name="Y" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-14" className="box" name="O" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
                     <Box id="box-15" className="box" name="U" dropLimit={true} correctAnswer={this.correctAnswer} wrongAnswer={this.wrongAnswer} targetKey="letter" />
-                    {this.state.winner === false && <ResetIcon src={Reset} onClick={this.reset} />}
+                    <ResetIcon src={Reset} onClick={this.reset} />
                 </LetterRow>
                 {this.state.winner === false &&
                     <Box id="letter-box" name="drop-box" className="box" width="250px" height="200px" targetKey="dropBox">
@@ -95,7 +95,7 @@ export default class Unscrambler extends React.Component {
                         <div style={{ textAlign: "center" }}>
                             <h1>You Win!</h1>
                             <Refresh onClick={this.revealTracklist}>Reveal Tracklist</Refresh>
-                            <Refresh onClick={this.reset}>Play Again</Refresh>
+                            <Presave href="https://dafna.fanlink.to/EyesClosed" >Pre-Save</Presave>
                         </div>
                     }
                 </LetterRow>
@@ -153,6 +153,21 @@ const Refresh = styled.div`
     }
 `;
 
+const Presave = styled.a`
+padding: 15px 30px 15px 30px;
+background-color: #5e96ea;
+color: white;
+border-radius: 1em;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 2vh;
+text-decoration: none;
+&:hover{
+    background-color: #4673b8;
+}
+`
 const ResetIcon = styled.img`
     margin-left: 22vh;
     margin-top: 2vh;

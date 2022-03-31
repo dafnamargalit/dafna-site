@@ -154,7 +154,7 @@ const Refresh = styled.div`
 `;
 
 const ResetIcon = styled.img`
-    margin-left: 20vh;
+    margin-left: 22vh;
     margin-top: 2vh;
     position: absolute;
     width: 4vh;

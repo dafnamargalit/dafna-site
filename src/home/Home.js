@@ -48,7 +48,6 @@ export default class Home extends Component {
 							<GameModal>
 								<h1>Let's play a game...</h1>
 								<p>Guess the name of my upcoming album based on scrambled letters.</p>
-								<p>First three people to guess correctly and send me a screenshot get some free merch.</p>
 								<Link to="/guess" style={{textDecoration: "none"}}>
 									<BeginButton>
 										LET'S PLAY

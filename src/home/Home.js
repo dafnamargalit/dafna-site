@@ -36,14 +36,14 @@ export default class Home extends Component {
 			<HomeWrap>
 				<HomeTop>
 					<MailingList onClick={this.openModal}>JOIN MY MAILING LIST</MailingList>
-					<Link to="/guess" style={{textDecoration: "none"}}>
+					{/* <Link to="/guess" style={{textDecoration: "none"}}>
 						<MailingList>GUESS ALBUM NAME</MailingList>
-					</Link>
+					</Link> */}
 				</HomeTop>
 				<HomeMiddle>
 					<LettersWrap>
 						<Modal onClose={this.openModal} show={this.state.modal}></Modal>
-						{(this.state.game === true && localStorage.getItem('played') === null) && 
+						{/* {(this.state.game === true && localStorage.getItem('played') === null) && 
 						<GameModalWrap onClick={this.playGame}>
 							<GameModal>
 								<h1>Let's play a game...</h1>
@@ -55,7 +55,7 @@ export default class Home extends Component {
 								</Link>
 								<No onClick={this.playGame}>No, I hate games. Take me to the site.</No>
 							</GameModal>
-						</GameModalWrap>}
+						</GameModalWrap>} */}
 						<Link to="/dates" style={{ textDecoration: 'none' }}>
 							<Letters src={D} alt="D" />
 						</Link>

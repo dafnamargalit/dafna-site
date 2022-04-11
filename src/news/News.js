@@ -5,6 +5,8 @@ import slide1 from '../assets/images/SLIDE-1.png';
 import slide2 from '../assets/images/SLIDE-2.png';
 import slide1m from '../assets/images/SLIDE-1-MOBILE.png';
 import slide2m from '../assets/images/SLIDE-2-MOBILE.png';
+import slide3 from '../assets/images/SLIDE-3.png';
+import slide3m from '../assets/images/SLIDE-3-MOBILE.png';
 import Slideshow from '../slideshow';
 import Footer from '../footer';
 import N from '../assets/letters/N.svg';
@@ -13,7 +15,7 @@ import W from '../assets/letters/W-G.svg';
 import S from '../assets/letters/S-G.svg';
 
 
-const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/TheManInMyDreams'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks'}];
+const images = [{image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks/product/8nights-t-shirt'}, {image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/EyesClosed'}];
 
 const News = () => {
     return(

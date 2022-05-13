@@ -15,7 +15,7 @@ import W from '../assets/letters/W-G.svg';
 import S from '../assets/letters/S-G.svg';
 
 
-const images = [{image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks/product/8nights-t-shirt'}, {image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/EyesClosed'}];
+const images = [{image: slide2, mobile: slide2m, link: 'https://dafna.fanlink.to/WHENIWASWITHYOU'}, {image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks/product/8nights-t-shirt'}];
 
 const News = () => {
     return(

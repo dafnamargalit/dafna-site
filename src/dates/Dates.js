@@ -17,7 +17,7 @@ const shows = [
         link: 'https://www.axs.com/events/427759/city-gates-still-woozy-goth-babe-hippo-campus-tickets'
     },
     {
-        title: 'Dafna at Underground Music Showcase',
+        title: 'Dafna at UMS',
         date: 'July 29th 2022',
         location: 'Denver, CO',
         link: 'https://www.undergroundmusicshowcase.com/'

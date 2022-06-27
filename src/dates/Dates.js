@@ -11,12 +11,17 @@ import Footer from '../footer';
 
 const shows = [
     {
-        title: 'Dafna with Oh Paris at eTown Music Hall',
-        date: 'May 13th 2022',
-        location: 'Boulder, CO',
-        link: 'https://www.etown.org/events/dafna/'
+        title: 'Dafna at City Gates',
+        date: 'July 9th 2022',
+        location: 'Denver, CO',
+        link: 'https://www.axs.com/events/427759/city-gates-still-woozy-goth-babe-hippo-campus-tickets'
     },
-
+    {
+        title: 'Dafna at Underground Music Showcase',
+        date: 'July 29th 2022',
+        location: 'Denver, CO',
+        link: 'https://www.undergroundmusicshowcase.com/'
+    },
 ]
 const Dates = () => {
     return (

@@ -11,18 +11,13 @@ import Footer from '../footer';
 
 const shows = [
     {
-        title: 'Dafna at City Gates',
-        date: 'July 9th 2022',
+        title: 'Dafna at High Ground',
+        date: 'Sept 11th 2022',
         location: 'Denver, CO',
-        link: 'https://www.axs.com/events/427759/city-gates-still-woozy-goth-babe-hippo-campus-tickets'
-    },
-    {
-        title: 'Dafna at Underground Music Showcase',
-        date: 'July 29th 2022',
-        location: 'Denver, CO',
-        link: 'https://www.undergroundmusicshowcase.com/'
+        link: 'https://www.tixr.com/groups/highgroundfest/events/high-ground-music-arts-experience-45105'
     },
 ]
+
 const Dates = () => {
     return (
         <DatesWrap>

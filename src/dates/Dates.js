@@ -11,9 +11,9 @@ import Footer from '../footer';
 
 const shows = [
     {
-        title: 'Dafna at Breaking Sound LA',
+        title: 'Dafna at Breaking Sound LA, Adults Only',
         date: 'Nov 8th 2022',
-        location: 'Adults Only, Los Angeles, CA',
+        location: 'Los Angeles, CA',
         link: 'https://www.tixr.com/groups/breakingsoundla/events/breaking-sound-la-at-adults-only-53374'
     },
         {

@@ -10,18 +10,18 @@ import Footer from '../footer';
 
 
 const shows = [
-    {
-        title: 'Dafna at Breaking Sound LA',
-        date: 'Nov 8th 2022',
-        location: 'Los Angeles, CA',
-        link: 'https://www.tixr.com/groups/breakingsoundla/events/breaking-sound-la-at-adults-only-53374'
-    },
-        {
-        title: 'Dafna at The Goldfish',
-        date: 'Dec 1st 2022',
-        location: 'Los Angeles, CA',
-        link: 'https://dice.fm/event/d6agq-dafna-kevin-creel-will-tulip-lando-burch-live-1st-dec-the-goldfish-los-angeles-tickets?pid=530cb286&_branch_match_id=1091079766736905196&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fcxSzFINkyySDUwMbMvyEyxNTU2SE4ysjADAJUI21ouAAAA'
-    },
+    // {
+    //     title: 'Dafna at Breaking Sound LA',
+    //     date: 'Nov 8th 2022',
+    //     location: 'Los Angeles, CA',
+    //     link: 'https://www.tixr.com/groups/breakingsoundla/events/breaking-sound-la-at-adults-only-53374'
+    // },
+    //     {
+    //     title: 'Dafna at The Goldfish',
+    //     date: 'Dec 1st 2022',
+    //     location: 'Los Angeles, CA',
+    //     link: 'https://dice.fm/event/d6agq-dafna-kevin-creel-will-tulip-lando-burch-live-1st-dec-the-goldfish-los-angeles-tickets?pid=530cb286&_branch_match_id=1091079766736905196&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fcxSzFINkyySDUwMbMvyEyxNTU2SE4ysjADAJUI21ouAAAA'
+    // },
 ]
 
 const Dates = () => {

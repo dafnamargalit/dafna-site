@@ -7,7 +7,8 @@ I created this website using [React](https://reactjs.org/), a component-based Ja
 I used the following packages while creating this website, using the yarn package installer:
 
 1. [react](https://www.npmjs.com/package/react) (obviously)
-2. [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+2. [react-router-dom](https://www.npmjs.com/package/react-router-dom) for the routing of each page.
+3. [styled-components](https://](https://styled-components.com/) for the styling of each page. Makes it a lot cleaner in my opinion!
 
 # Deployment
 

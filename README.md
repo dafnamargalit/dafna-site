@@ -1,4 +1,4 @@
-Welcome to the source code of my own [personal website](https://dafnamargalit.com)!
+Welcome to the source code of my own [personal website](https://dafna.rocks)!
 
 I created this website using [React](https://reactjs.org/), a component-based JavaScript Framework that allowed me to efficiently create a cool multi-page website!
 
